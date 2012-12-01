@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /*jslint node: true, es5: true*/
 
 "use strict";
