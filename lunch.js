@@ -1,3 +1,5 @@
+/*jslint node: true, es5: true*/
+
 "use strict";
 
 var fs = require('fs'),
