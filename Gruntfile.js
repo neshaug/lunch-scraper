@@ -1,18 +1,11 @@
-/*global module:false*/
 module.exports = function (grunt) {
 
   'use strict';
 
-  // Project configuration.
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+
   grunt.initConfig({
     pkg: '<json:package.json>',
-    lint: {
-      files: ['grunt.js', '*.js']
-    },
-    watch: {
-      files: '<config:lint.files>',
-      tasks: 'lint'
-    },
     jshint: {
       options: {
         curly: true,
@@ -42,6 +35,6 @@ module.exports = function (grunt) {
   });
 
   // Default task.
-  grunt.registerTask('default', 'lint');
+  grunt.registerTask('default', 'jshint');
 
 };
